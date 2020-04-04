@@ -1,0 +1,46 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "./development/css/"
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.promptToSaveFilesBeforeCommit": true,
+    "git.enableSmartCommit": true,
+    "css.lint.unknownProperties": "ignore",
+    "scss.lint.unknownProperties": "ignore",
+    "git.confirmSync": false,
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true,
+    "editor.wordWrap": "on",
+    "window.zoomLevel": 0,
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "highlight-matching-tag.styles": {
+        "opening": {
+            "name": {
+                "underline": "yellow",
+                "color": "yellow",
+                "highlight": "rgba(180, 20, 80, 0.3)"
+            }
+        },
+        "closing": {
+            "name": {
+                "underline": "yellow",
+                "color": "yellow",
+                "highlight": "rgba(180, 20, 80, 1)"
+            }
+        }
+    },
+    "bracket-pair-colorizer-2.colors": [
+        "LightSkyBlue"
+    ],
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.channel": "none"
+}
