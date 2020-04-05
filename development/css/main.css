@@ -4,6 +4,7 @@ body, html {
   margin: 0;
   font-family: "Roboto Slab", serif;
   font-size: 16px;
+  background-color: #ffffff;
 }
 
 * {
@@ -18,6 +19,12 @@ p, h1, h2, h3, h4, h5 {
 a {
   color: initial;
   text-decoration: none;
+}
+
+p {
+  line-height: 1.666;
+  margin: 0.9375rem 0 0.625rem;
+  font-size: 1.125rem;
 }
 
 a, span, i, div, img {
@@ -90,7 +97,11 @@ img {
 
 .container {
   width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
   overflow-x: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .inner {
@@ -99,8 +110,62 @@ img {
   margin: 0 auto;
 }
 
-nav {
+header {
   width: 100%;
+  background-attachment: fixed;
+  background-size: 120rem;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 72.625rem;
+  z-index: 1;
+}
+
+header .inner {
+  display: table;
+  table-layout: fixed;
+  padding: 3.75rem 0 0;
+}
+
+header .left {
+  display: table-cell;
+  vertical-align: top;
+}
+
+header .right {
+  display: table-cell;
+  vertical-align: top;
+}
+
+header .right h1 {
+  color: #333333;
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+header .right p {
+  color: #333333;
+}
+
+header .right h2 {
+  font-size: 2.25rem;
+  color: #528413;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+section.section1 {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  background-size: 120rem;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 25rem;
+  height: 2000px;
 }
 
 @media screen and (max-width: 500px) {

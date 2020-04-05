@@ -1,0 +1,48 @@
+header {
+    width: 100%;
+    background-attachment: fixed;
+    background-size: rem(1920);
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: rem(1162);
+    z-index: 1;
+
+    .inner {
+        display: table;
+        table-layout: fixed;
+        padding: rem(60) 0 0;
+    }
+
+    .left {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .right {
+        display: table-cell;
+        vertical-align: top;
+
+        h1 {
+            color: $dark;
+            font-size: rem(46);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        p {
+            color: $dark;
+        }
+
+        h2 {
+            font-size: rem(36);
+            color: #528413;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+    }
+
+}
+
