@@ -19,6 +19,12 @@ header {
     .left {
         display: table-cell;
         vertical-align: top;
+
+        img#top-logo {
+            opacity: 0;
+            width: rem(281);
+            max-width: 95%;
+        }
     }
 
     .right {

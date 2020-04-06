@@ -1,0 +1,98 @@
+form.order {
+    display: inline-block;
+    vertical-align: middle;
+    width: rem(320);
+    padding: rem(18) rem(20);
+    background-color: #afdd11;
+    border-radius: rem(9);
+    color: $dark;
+    font-family: $rob;
+
+    select, input {
+        width: 100%;
+        padding: rem(16) rem(16) rem(16) rem(25);
+        background-color: #fff;
+        font-size: rem(18);
+        border-radius: rem(6);
+        line-height: 1;
+        border: none;
+        margin-bottom: rem(20);
+        font-weight: 400;
+    }
+
+    h3.oldprice {
+        color: $dark;
+        font-size: rem(24);
+        font-weight: 700;
+        line-height: 1;
+
+        .striked {
+            text-decoration: line-through;
+        }
+
+        .optext {
+            font-size: rem(14);
+            vertical-align: top;
+            padding-left: rem(10);
+        }
+    }
+
+    h3.popust {
+        color: #fff;
+        font-weight: 700;
+        font-size: rem(42);
+        line-height: 1;
+        padding: rem(12) 0;
+    }
+
+    h3.newprice {
+        color: #d50101;
+        font-weight: 700;
+        font-size: rem(45);
+        line-height: 1;
+        padding-bottom: rem(2);
+    }
+
+    h4 {
+        color: #d50101;
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: 1;
+        padding-bottom: rem(7);
+        text-align: right;
+    }
+
+    .btncont {
+        width: 100%;
+        text-align: center;
+
+        button {
+            width: 100%;
+            max-width: rem(255);
+            line-height: 1;
+            display: inline-block;
+            border: 2px solid #000;
+            color: #fff;
+            background-color: #000;
+            font-family: $rslab;
+            font-weight: 700;
+            font-size: rem(30);
+            vertical-align: middle;
+            padding: rem(5) 0 rem(7);
+            border-radius: rem(23);
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+
+            i {
+                vertical-align: baseline;
+                padding-left: rem(20);
+                font-size: rem(25);
+            }
+        }
+
+        button:hover {
+            background-color: #999;
+        }
+    }
+
+}

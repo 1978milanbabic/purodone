@@ -4,15 +4,40 @@
     /****************************
      * LOADS IN HEADER
      ****************************/
-
+    var initTopFading;
 
     /****************************
      * LOADS ON DOCUMENT READY
      ****************************/
 
     $(doc).ready(function () {
+        var $topTxt = $("header .inner .right h1, header .inner .right p, header .inner .right h2");
+        var $toplogo = $("#top-logo");
 
+        initTopFading = function () {
+            var sctop = $(win).scrollTop();
+            if (sctop < 20) {
+                $topTxt.fadeIn(800);
+                $toplogo.removeClass("disl").addClass("gifl");
+            } else {
+                $topTxt.fadeOut(400);
+                $toplogo.removeClass("gifl").addClass("disl");
+            }
 
+            $(win).scroll(function () {
+                sctop = $(win).scrollTop();
+                if (sctop < 20) {
+                    $topTxt.fadeIn(800);
+                    $toplogo.removeClass("disl").addClass("gifl");
+                } else {
+                    $topTxt.fadeOut(400);
+                    $toplogo.removeClass("gifl").addClass("disl");
+                }
+            });
+        }
+
+        // initial hide
+        $topTxt.fadeOut(0);
 
     }); //document ready end
 
@@ -138,7 +163,12 @@
                 }
             },
             successLoad: function () {
-                $(".loader").fadeOut(500);
+                $(".loader").fadeOut(500, function () {
+                    // init anims
+                    initAnims();
+                    // init top
+                    initTopFading();
+                });
             },
             setImages: function (size) {
                 var mode;

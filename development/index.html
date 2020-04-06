@@ -5,6 +5,13 @@
     <title>Purodone</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.offers = {
+            "1": 3650,
+            "3": 7300,
+            "5": 10950
+        };
+    </script>
     <script src="./js/scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
     <script src="./js/scripts/cssmediatojsconn.min.js"></script>
     <script src="./js/scripts/add_anims_on_scroll.min.js"></script>
@@ -18,6 +25,7 @@
         <div class="loader">
             <div class="loader__middle">
                 <div class="loader__inner">
+                    <img src="./img/all/top/logo_top.png" alt="" id="loadlogo"><br>
                     <img src="./img/ajax-loader.gif" alt="">
                 </div>
             </div>
@@ -40,10 +48,38 @@
 
         <section class="section1">
 
+            <div class="topbottles anim a-fadein" data-adelay="200"></div>
+            <div class="topbottle anim a-fadein" data-adelay="200"></div>
+
             <div class="form-top">
                 <div class="inner">
                     <div class="left"></div>
                     <div class="right">
+
+                        <form action="order-link-here" class="order anim a-bounceindown" data-adelay="500" method="POST">
+                            <select name="country" class="entry-country">
+                                <option value="RS">Srbija</option>
+                                <option value="BIH">BIH</option>
+                            </select>
+                            <input type="text" name="name" class="entry-name" placeholder="Vaše Ime i Prezime" required>
+                            <input type="text" name="phone" class="entry-phone" placeholder="Broj Telefona" required>
+                            <h3 class="oldprice">
+                                <span class="striked">
+                                    <span class="price">
+                                        <script>document.write(offers["1"] * 2)</script></span>,00 RSD</span> <span
+                                    class="optext">STARA
+                                    CENA</span>
+                            </h3>
+                            <h3 class="popust">50% POPUSTA</h3>
+                            <h3 class="newprice">
+                                <span class="price">
+                                    <script>document.write(offers["1"])</script></span>,00 RSD
+                            </h3>
+                            <h4>NOVA CENA</h4>
+                            <div class="btncont">
+                                <button type="submit">Naručujem <i class="fa fa-caret-right"></i></button>
+                            </div>
+                        </form>
 
                     </div>
                 </div>
@@ -52,7 +88,15 @@
             <div class="kada">
                 <div class="inner">
                     <div class="left">
-
+                        <h2 class="anim a-gifl" data-astart="6">Kada spomenemo parazite, mnogi od vas će osetiti
+                            gađenje i to nije bez razloga.</h2>
+                        <p class="anim a-gifl" data-astart="6" data-adelay="100"><b>Oni izazivaju niz oboljenja, a
+                                nekada toga nismo ni svesni.</b> Paraziti su spore i tihe
+                            ubice našeg zdravlja, jer polako narušavaju čitav sistem, a samim tim utiču na slabljenje
+                            našeg imuniteta, što dovodi do toga da postajemo podložniji ostalim bolestima i spoljnjim
+                            negativnim uticajima.</p>
+                        <p class="anim a-gifl" data-astart="6" data-adelay="200">Paraziti se nalaze u našem crevima, a
+                            sličan problem mogu da imaju i životinje.</p>
                     </div>
                     <div class="right"></div>
                 </div>
@@ -60,15 +104,31 @@
 
             <div class="zasto">
                 <div class="inner">
-                    <div class="left"></div>
-                    <div class="right"></div>
+                    <div class="left">
+                        <div class="left-inner anim a-fadein" data-astart="1">
+                            <img src="./img/all/top/stomack.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="anim a-gifr" data-astart="6">Zašto su paraziti najčešće u crevima?</h2>
+                        <h5 class="anim a-gifr" data-astart="6" data-adelay="100">Zato što tamo imaju mnogo hrane,
+                            temperatura im odgovara i bez problema, mogu da se
+                            razmnožavaju.</h5>
+                    </div>
                 </div>
             </div>
 
             <div class="najop">
                 <div class="inner">
                     <div class="left"></div>
-                    <div class="right"></div>
+                    <div class="right">
+                        <p class="anim a-gifr" data-astart="6" data-adelay="200">Najopasnije je kada paraziti nasele
+                            organe i tkiva, onda
+                            počnu da oštećuju tkiva, i dolazi
+                            do razvoja tumora. Ako vaš imuni sistem nije u stanju da se odbrani od parazite, on počinje
+                            da slabi jer je napadnut. Ove nevidljive napasti čine da se osećamo loše i da počnemo da
+                            oboljevamo od raznih bolesti.</p>
+                    </div>
                 </div>
             </div>
 

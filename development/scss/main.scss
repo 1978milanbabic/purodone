@@ -1,10 +1,12 @@
 //********************** FONTS ******************************
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700i,900i&display=swap&subset=latin-ext');
+@import url('./font-awesome.min.css');
 
 //**************** VARIABLES *******************
 
 @import './variables/basic-variables';
 @import './variables/colors';
+@import './animations/anims';
 
 //********************** BASICS (ANULL BASIC DEFAULTS OF BROWSERS) *****************************
 
@@ -33,6 +35,7 @@ p {
     line-height: 1.666;
     margin: rem(15) 0 rem(10);
     font-size: rem(18);
+    text-align: justify;
 }
 
 //no select, touch callout, drag, drop,... except text (enabled 'copy' only on 'text' elements)
@@ -72,12 +75,18 @@ img {
 
 .loader__inner {
     display: block;
-    width: 80px;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .loader__inner img {
-    width: 100%;
+    width: 80px;
+}
+
+.loader__inner #loadlogo {
+    width: rem(350);
+    max-width: 80%;
 }
 
 //******** pics-preload *********
@@ -132,6 +141,7 @@ img {
 
 @import './partials/header';
 @import './partials/section1';
+@import './partials/form';
 
 //********************** MEDIA *********************
 
