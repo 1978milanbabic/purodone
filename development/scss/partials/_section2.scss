@@ -1,0 +1,163 @@
+section.section2 {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff;
+    background-image: url(../img/all/section2/leaves.png);
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: repeat-y;
+    background-size: rem(281) auto;
+
+    .inner {
+        display: table;
+        table-layout: fixed;
+        padding: rem(15) 0 rem(45);
+        color: $dark;
+
+        .left {
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            z-index: 2;
+
+            .exclam {
+                width: 100%;
+                text-align: center;
+                padding: rem(10) 0 rem(15);
+
+                i {
+                    font-size: rem(70);
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+
+            h2 {
+                font-weight: 700;
+                font-size: rem(30);
+                position: relative;
+                z-index: 2;
+            }
+
+            h4 {
+                font-size: rem(24);
+                font-weight: 400;
+                padding: rem(15) 0 rem(15);
+                position: relative;
+                z-index: 2;
+            }
+
+            p {
+                font-family: $rob;
+                font-weight: 400;
+                font-size: rem(18);
+                position: relative;
+                z-index: 2;
+            }
+
+            .leaf1 {
+                width: rem(84);
+                position: absolute;
+                left: rem(-60);
+                top: rem(20);
+                z-index: 1;
+            }
+
+            .leaf2 {
+                width: rem(102);
+                position: absolute;
+                left: rem(-80);
+                bottom: rem(-20);
+                z-index: 1;
+            }
+        }
+
+        .right {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+            position: relative;
+            z-index: 1;
+            font-family: $rob;
+
+            .bottle {
+                position: absolute;
+                z-index: 1;
+                left: rem(-40);
+                bottom: 0;
+                width: rem(425);
+                height: rem(418);
+                background-image: url(../img/desk/bottle/bottle.png);
+                background-size: cover;
+            }
+
+            .leaf3 {
+                width: rem(84);
+                position: absolute;
+                left: rem(200);
+                top: rem(25);
+                z-index: 2;
+            }
+
+            .leaf4 {
+                width: rem(102);
+                position: absolute;
+                left: rem(336);
+                top: rem(79);
+                z-index: 2;
+            }
+
+            .leaf5 {
+                width: rem(115);
+                position: absolute;
+                left: rem(174);
+                bottom: 0;
+                z-index: 2;
+            }
+
+            h2 {
+                font-style: italic;
+                font-weight: 900;
+                font-size: rem(48);
+                padding: rem(10) 0;
+            }
+
+            h3 {
+                font-style: italic;
+                font-weight: 700;
+                font-size: rem(30);
+                padding-bottom: rem(53);
+            }
+
+            button {
+                width: rem(350);
+                max-width: 95%;
+                line-height: 1;
+                display: inline-block;
+                border: 2px solid #000;
+                color: #fff;
+                background-color: #000;
+                font-family: $rslab;
+                font-weight: 700;
+                font-size: rem(30);
+                vertical-align: middle;
+                padding: rem(5) 0 rem(7);
+                border-radius: rem(23);
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+
+                i {
+                    vertical-align: baseline;
+                    padding-left: rem(20);
+                    font-size: rem(25);
+                }
+            }
+
+            button:hover {
+                background-color: #999;
+            }
+        }
+    }
+
+}

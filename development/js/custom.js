@@ -186,17 +186,14 @@
                         mode = "mob";
                         break;
                 }
-                function setBgdAll(el, route) {
-                    $(el).css("background-image", "url(./img/all" + route + ")");
-                }
+
                 function setBgd(el, route) {
                     $(el).css("background-image", "url(./img/" + mode + "/" + route + ")");
                 }
 
-
-
                 setBgd("header", "top/daske.jpg");
-                setBgd("section.section1", "top/top.png")
+                setBgd("section.section1", "top/top.png");
+
             }
         };
 

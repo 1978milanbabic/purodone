@@ -168,3 +168,19 @@
     animation-fill-mode: both;
 }
 
+// leafin
+@keyframes leafin {
+    0% {
+        opacity: 0;
+        transform: translate(rem(-5), rem(-25)) rotateZ(-25deg)
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) rotateZ(0deg)
+    }
+}
+
+.leafin {
+    animation: leafin 1s ease-in-out;
+    animation-fill-mode: both;
+}
