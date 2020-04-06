@@ -87,6 +87,23 @@
     animation-fill-mode: both;
 }
 
+// drop in from left
+@keyframes dropinl {
+    0% {
+        opacity: 0;
+        transform: scale(2.5, 2.5) translateX(rem(-250));
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1) translateX(0);
+    }
+}
+
+.dropinl {
+    animation: dropinl 0.4s ease-in-out;
+    animation-fill-mode: both;
+}
+
 // opacity in slow
 @keyframes opacityin {
     from {

@@ -5,7 +5,7 @@ section.section2 {
     background-color: #ffffff;
     background-image: url(../img/all/section2/leaves.png);
     background-attachment: fixed;
-    background-position: right center;
+    background-position: right 0 center;
     background-repeat: repeat-y;
     background-size: rem(281) auto;
 
@@ -121,6 +121,8 @@ section.section2 {
                 font-weight: 900;
                 font-size: rem(48);
                 padding: rem(10) 0;
+                position: relative;
+                z-index: 3;
             }
 
             h3 {
@@ -128,6 +130,8 @@ section.section2 {
                 font-weight: 700;
                 font-size: rem(30);
                 padding-bottom: rem(53);
+                position: relative;
+                z-index: 3;
             }
 
             button {
@@ -146,6 +150,8 @@ section.section2 {
                 border-radius: rem(23);
                 cursor: pointer;
                 transition: background-color 0.3s ease-in-out;
+                position: relative;
+                z-index: 3;
 
                 i {
                     vertical-align: baseline;
@@ -160,4 +166,10 @@ section.section2 {
         }
     }
 
+}
+
+@media screen and (max-width: 1750px) {
+    section.section2 {
+        background-position: right calc(50vw - 875px) center;
+    }
 }

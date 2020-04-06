@@ -1,0 +1,40 @@
+section.section3 {
+    width: 100%;
+    height: rem(1131);
+    position: relative;
+    z-index: 1;
+    background-size: rem(1920) auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    p {
+        font-family: $rslab;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .ako-pos {
+        display: inline-block;
+        width: rem(430);
+        max-width: 80%;
+        transform: translateX(-100px);
+        padding: rem(125) 0 rem(90);
+
+        p {
+            font-size: rem(30);
+        }
+    }
+
+    .sim-pos {
+        display: inline-block;
+        width: rem(600);
+        max-width: 85%;
+
+        p {
+            font-size: rem(48);
+        }
+    }
+}

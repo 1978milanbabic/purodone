@@ -194,6 +194,8 @@
                 setBgd("header", "top/daske.jpg");
                 setBgd("section.section1", "top/top.png");
 
+
+                setBgd("section.section3", "section3/bgd.jpg");
             }
         };
 
