@@ -383,8 +383,8 @@
 }
 
 .leafin {
-  -webkit-animation: leafin 1s ease-in-out;
-          animation: leafin 1s ease-in-out;
+  -webkit-animation: leafin 1.5s ease-in-out;
+          animation: leafin 1.5s ease-in-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -994,7 +994,7 @@ section.section3 {
   width: 100%;
   height: 70.6875rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background-size: 120rem auto;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1030,6 +1030,106 @@ section.section3 .sim-pos {
 
 section.section3 .sim-pos p {
   font-size: 3rem;
+}
+
+section.section4 {
+  width: 100%;
+  color: #333333;
+  position: relative;
+  z-index: 2;
+  margin-top: -11.875rem;
+  color: #333333;
+}
+
+section.section4 .sigurno {
+  width: 100%;
+  max-width: 40.9375rem;
+}
+
+section.section4 .sigurno h2 {
+  font-size: 1.875rem;
+}
+
+section.section4 .sigurno p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+section.section4 .slider-inner {
+  overflow: hidden;
+}
+
+section.section4 .slider {
+  width: 100%;
+  position: relative;
+  padding: 1.875rem 0 2.5rem;
+}
+
+section.section4 .slider .entity {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 2.75rem;
+}
+
+section.section4 .slider .entity .pichold {
+  width: 14.6875rem;
+  margin: 0 auto;
+  padding-bottom: 0.9375rem;
+}
+
+section.section4 .slider .entity .pichold img {
+  width: 100%;
+}
+
+section.section4 .slider .entity .texthold {
+  width: 100%;
+  border: 1px solid #666;
+  padding: 0 1.375rem;
+  border-radius: 0.625rem;
+}
+
+section.section4 .slider .entity .texthold p {
+  font-size: 0.875rem;
+}
+
+section.section4 .slider .leftbtn, section.section4 .slider .rightbtn {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 3.75rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 75%;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+section.section4 .slider .leftbtn i, section.section4 .slider .rightbtn i {
+  position: absolute;
+  font-size: 4.0625rem;
+  font-weight: 700;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section.section4 .slider .leftbtn:hover, section.section4 .slider .rightbtn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.section4 .loszadah {
+  width: 95%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.25rem 0 5.625rem;
+}
+
+section.section4 .loszadah h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {

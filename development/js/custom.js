@@ -4,7 +4,7 @@
     /****************************
      * LOADS IN HEADER
      ****************************/
-    var initTopFading;
+    var initTopFadingAndBGChange;
 
     /****************************
      * LOADS ON DOCUMENT READY
@@ -14,7 +14,10 @@
         var $topTxt = $("header .inner .right h1, header .inner .right p, header .inner .right h2");
         var $toplogo = $("#top-logo");
 
-        initTopFading = function () {
+        initTopFadingAndBGChange = function () {
+            var $header = $("header");
+            var topBG = $header.css("background-image");
+            var triggerWhite = $("section.section2").offset().top;
             var sctop = $(win).scrollTop();
             if (sctop < 20) {
                 $topTxt.fadeIn(800);
@@ -22,6 +25,11 @@
             } else {
                 $topTxt.fadeOut(400);
                 $toplogo.removeClass("gifl").addClass("disl");
+            }
+            if (sctop >= triggerWhite) {
+                $header.css("background-image", "none");
+            } else {
+                $header.css("background-image", topBG);
             }
 
             $(win).scroll(function () {
@@ -33,11 +41,157 @@
                     $topTxt.fadeOut(400);
                     $toplogo.removeClass("gifl").addClass("disl");
                 }
+                if (sctop >= triggerWhite) {
+                    $header.css("background-image", "none");
+                } else {
+                    $header.css("background-image", topBG);
+                }
             });
         }
 
         // initial hide
         $topTxt.fadeOut(0);
+
+        // slider
+        window.slider = {
+            $entities: [],
+            $leftBtn: $(".leftbtn"),
+            $rightBtn: $(".rightbtn"),
+            $slider: $(".slider"),
+            currentMatrix: [5, 0, 1, 2, 3, 4],
+            height: 200,
+            createVDOM: function () {
+                var self = this;
+                var $entites = $(".entity");
+                $entites.each(function (i, el) {
+                    var $el = $(el);
+                    // populate VDOM
+                    self.$entities.push($el);
+                });
+            },
+            init: function (visibleSize) {
+                var self = this;
+                //  ** anull previous
+                this.offBtns();
+                // recreate DOM
+                this.deleteExisting();
+                this.populateAll();
+                // ** create DOM
+                switch (visibleSize) {
+                    case 3:
+                        // set width for slider
+                        self.$slider.css({
+                            "width": (5 / 3) * 100 + "%",
+                            "left": - (1 / 5) * (5 / 3) * 100 + "%"
+                        });
+                        // set width for elems
+                        self.$entities.forEach(function ($el) {
+                            $el.css("width", (1 / 5) * 100 + "%");
+                        });
+                        // get/set max height
+                        self.setHighestEl();
+                        //      format elems
+                        // clear table
+                        self.deleteExisting();
+                        // create new ones
+                        self.create_3el_slider();
+                        break;
+                    case 2:
+                        break;
+                    case 1:
+                        break;
+                }
+
+            },
+            create_3el_slider: function () {
+                var self = this;
+                // stop events
+                this.offBtns();
+                // populate elems
+                self.$entities[self.currentMatrix[0]].addClass("pastel");
+                self.$slider.append(self.$entities[self.currentMatrix[0]]);
+
+                self.$slider.append(self.$entities[self.currentMatrix[1]]);
+                self.$slider.append(self.$entities[self.currentMatrix[2]]);
+                self.$slider.append(self.$entities[self.currentMatrix[3]]);
+
+                self.$entities[self.currentMatrix[4]].addClass("tobeel");
+                self.$slider.append(self.$entities[self.currentMatrix[4]]);
+                // place arrows
+                self.showBtns();
+                self.$leftBtn.css("left", (1 / 5) * 100 + "%");
+                self.$rightBtn.css("right", (1 / 5) * 100 + "%");
+                // ** add events
+                // go left
+                this.$leftBtn.click(function () {
+                    self.offBtns();
+                    self.$slider.animate({
+                        "left": 0 + "%"
+                    }, 500, function () {
+                        // set current / change matrix
+                        var preEl = self.currentMatrix[self.currentMatrix.length - 1];
+                        self.currentMatrix.pop();
+                        self.currentMatrix.unshift(preEl);
+
+                        // reload
+                        self.init(3);
+                    })
+                });
+                // go right
+                this.$rightBtn.click(function () {
+                    self.offBtns();
+                    self.$slider.animate({
+                        "left": - (2 / 5) * (5 / 3) * 100 + "%"
+                    }, 500, function () {
+                        // set current / change matrix
+                        var preEl = self.currentMatrix[0];
+                        self.currentMatrix.shift();
+                        self.currentMatrix.push(preEl);
+
+                        // reload
+                        self.init(3);
+                    })
+                });
+            },
+            offBtns: function () {
+                this.$leftBtn.off("click");
+                this.$rightBtn.off("click");
+                this.hideBtns();
+            },
+            hideBtns: function () {
+                this.$leftBtn.css("visibility", "hidden");
+                this.$rightBtn.css("visibility", "hidden");
+            },
+            showBtns: function () {
+                this.$leftBtn.css("visibility", "visible");
+                this.$rightBtn.css("visibility", "visible");
+            },
+            setHighestEl: function () {
+                var self = this;
+                var maxHight = 0;
+                this.$entities.forEach(function ($el) {
+                    var curHight = parseInt($el.css("height")) + 40;
+                    if (curHight > maxHight) {
+                        maxHight = curHight;
+                    }
+                    // set height
+                    self.height = maxHight;
+                    self.$slider.css("height", self.height);
+                });
+            },
+            deleteExisting: function () {
+                this.$slider.find(".entity").remove();
+            },
+            populateAll: function () {
+                var self = this;
+                this.$entities.forEach(function ($el) {
+                    self.$slider.append($el);
+                });
+            }
+        };
+
+        // create virtual DOM
+        slider.createVDOM();
 
     }); //document ready end
 
@@ -141,8 +295,8 @@
                     });
                     $("#pics-preload").append(aPic);
                 }
-                this.checkLoad();
                 this.setImages(size);
+                this.checkLoad();
             },
             checkLoad: function () {
                 var t = this;
@@ -167,7 +321,7 @@
                     // init anims
                     initAnims();
                     // init top
-                    initTopFading();
+                    initTopFadingAndBGChange();
                 });
             },
             setImages: function (size) {
@@ -205,16 +359,22 @@
         media.size(1, function () {
             //custom function for size 1
             picPreloadHandler.addPicsToPreload(1);
+            // create slider
+            slider.init(3)
         });
 
         media.size(2, function () {
             //custom function for size 2
             picPreloadHandler.addPicsToPreload(2);
+            // create slider
+            slider.init(2)
         });
 
         media.size(3, function () {
             //custom function for size 3
             picPreloadHandler.addPicsToPreload(3);
+            // create slider
+            slider.init(1)
         });
 
         media.init();
