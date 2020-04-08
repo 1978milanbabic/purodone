@@ -1,0 +1,135 @@
+.order {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+
+    .inner {
+        border-width: 2px;
+        border-color: rgb(255, 255, 255);
+        border-style: dashed;
+        border-radius: 25px;
+        background-color: rgb(83, 132, 20);
+        box-shadow: 2.5px 4.33px 21px 0px rgba(0, 0, 0, 0.4);
+        padding: rem(18) 3.125%;
+
+        .orders {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+
+            .order {
+                display: table-cell;
+                vertical-align: top;
+                padding: 0 rem(40);
+                text-align: center;
+            }
+
+            .order__inner {
+                width: 100%;
+                border-width: 5px;
+                border-color: rgb(83, 132, 20);
+                border-style: solid;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 2.5px 4.33px 21px 0px rgba(0, 0, 0, 0.4);
+                border-bottom-left-radius: rem(40);
+                border-top-right-radius: rem(40);
+                padding: rem(22) 0 rem(55);
+                text-align: left;
+                cursor: pointer;
+                transition: border-color 0.3s ease-in-out;
+
+                .price {
+                    width: rem(200);
+                    display: inline-block;
+                    background-color: rgb(83, 132, 20);
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: rem(30);
+                    text-align: center;
+                    margin-left: rem(17);
+                    border-top-left-radius: rem(25);
+                    border-bottom-left-radius: rem(25);
+                    border-top-right-radius: rem(25);
+
+                    p {
+                        text-align: center;
+                        margin: 0;
+                        // padding: rem(10) 0;
+                        font-size: rem(30);
+
+                        span {
+                            font-size: rem(12);
+                            vertical-align: top;
+                            margin-top: rem(10);
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                .imgcont {
+                    width: 100%;
+                    padding: rem(15) 0 0;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .count {
+                    width: 100%;
+                    position: relative;
+                    text-align: center;
+                    font-family: $rob;
+                    font-weight: 700;
+                    color: #538414;
+                    font-size: rem(36);
+                }
+            }
+
+            .order__inner:hover {
+                box-shadow: none;
+                border-color: #07550b;
+            }
+
+        }
+
+        .btncont {
+            text-align: center;
+            padding-top: rem(35);
+        }
+
+        button {
+            width: rem(350);
+            max-width: 95%;
+            line-height: 1;
+            display: inline-block;
+            border: 2px solid #000;
+            color: #fff;
+            background-color: #000;
+            font-family: $rslab;
+            font-weight: 700;
+            font-size: rem(30);
+            vertical-align: middle;
+            padding: rem(5) 0 rem(7);
+            border-radius: rem(23);
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            position: relative;
+            z-index: 3;
+
+            i {
+                vertical-align: baseline;
+                padding-left: rem(20);
+                font-size: rem(25);
+            }
+        }
+
+        button:hover {
+            background-color: #999;
+        }
+
+    }
+
+}
+
+

@@ -193,6 +193,53 @@
         // create virtual DOM
         slider.createVDOM();
 
+        // ** offers change on click **
+        var offersControler = {
+            $btn1: $(".offer1"),
+            $btn3: $(".offer3"),
+            $btn5: $(".offer5"),
+            init: function () {
+                var self = this;
+                function makeActive($el) {
+                    $el.removeClass("bouncein").animate({
+                        "opacity": 1,
+                        "box-shadow": "none"
+                    }, 300);
+                }
+                function makeInnactive($el) {
+                    $el.removeClass("bouncein").animate({
+                        "opacity": 0.5,
+                        "box-shadow": "2.5px 4.33px 21px 0px rgba(0, 0, 0, 0.4)"
+                    }, 300);
+                }
+                function changePrice(price) {
+                    $(".oldprice .price").html(price * 2);
+                    $(".newprice .price").html(price);
+                }
+                // add events
+                this.$btn1.click(function () {
+                    makeActive(self.$btn1);
+                    makeInnactive(self.$btn3);
+                    makeInnactive(self.$btn5);
+                    changePrice(offers["1"]);
+                });
+                this.$btn3.click(function () {
+                    makeInnactive(self.$btn1);
+                    makeActive(self.$btn3);
+                    makeInnactive(self.$btn5);
+                    changePrice(offers["3"]);
+                });
+                this.$btn5.click(function () {
+                    makeInnactive(self.$btn1);
+                    makeInnactive(self.$btn3);
+                    makeActive(self.$btn5);
+                    changePrice(offers["5"]);
+                });
+            }
+        };
+
+        offersControler.init();
+
     }); //document ready end
 
     /****************************
@@ -322,6 +369,13 @@
                     initAnims();
                     // init top
                     initTopFadingAndBGChange();
+                    // take me to offer btn
+                    $(".takemetooffer").click(function () {
+                        var fform = $("#final-form").offset().top;
+                        $("html, body").animate({
+                            scrollTop: fform
+                        }, 1000);
+                    });
                 });
             },
             setImages: function (size) {
