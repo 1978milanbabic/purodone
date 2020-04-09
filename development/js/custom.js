@@ -424,6 +424,8 @@
                 setBgd("section.section9", "section9/bgd.jpg");
                 setBgd("section.section11", "section11/bgd.jpg");
                 setBgd("section.section11 .bottle", "bottle/bottle.png");
+                setBgd("section.section11 .stak .bottle", "bottle/bottle.png");
+                setBgd("section.section11 .vremeje .bottle", "bottle/bottles.png");
             }
         };
 
