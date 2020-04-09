@@ -409,6 +409,7 @@
                 setBgd("section.section7 .right .doca", "section7/medic.png");
                 setBgd("section.section8", "section8/bgd.png");
                 setBgd("section.section8 .bottle", "section8/bottle.png");
+                setBgd("section.section9", "section9/bgd.jpg");
             }
         };
 

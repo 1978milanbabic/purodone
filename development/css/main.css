@@ -1489,7 +1489,8 @@ section.section7 {
   position: relative;
   z-index: 2;
   color: #fff;
-  background-color: #538414;
+  background: -webkit-gradient(linear, left top, left bottom, from(#538414), to(#588916));
+  background: linear-gradient(#538414, #588916);
   padding: 2.8125rem 0;
 }
 
@@ -1593,6 +1594,73 @@ section.section8 .bottle {
   z-index: 1;
   top: 3.125rem;
   right: 3.125rem;
+}
+
+section.section9 {
+  width: 100%;
+  background-size: 120rem auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 65.9375rem;
+  margin-top: -61.875rem;
+  z-index: 1;
+  position: relative;
+}
+
+section.section9 .left {
+  width: 100%;
+  max-width: 40rem;
+  padding: 41.5625rem 2.1875rem 0;
+}
+
+section.section9 .left h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1.2;
+  padding-bottom: 0.625rem;
+}
+
+section.section9 .left h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 70;
+  font-style: italic;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  padding-bottom: 1.5625rem;
+}
+
+section.section9 .left button {
+  width: 30rem;
+  max-width: 99%;
+  line-height: 1;
+  display: inline-block;
+  border: 2px solid #000;
+  color: #fff;
+  background-color: #000;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  vertical-align: middle;
+  padding: 0.3125rem 0 0.4375rem;
+  border-radius: 1.4375rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  z-index: 999;
+  opacity: 0.99;
+}
+
+section.section9 .left button i {
+  vertical-align: baseline;
+  padding-left: 1.25rem;
+  font-size: 1.5625rem;
+}
+
+section.section9 .left button:hover {
+  background-color: #999;
 }
 
 @media screen and (max-width: 500px) {
