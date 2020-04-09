@@ -18,6 +18,7 @@
             var $header = $("header");
             var topBG = $header.css("background-image");
             var triggerWhite = $("section.section2").offset().top;
+            var triggerGreen = $("section.section11").offset().top;
             var sctop = $(win).scrollTop();
             if (sctop < 20) {
                 $topTxt.fadeIn(800);
@@ -30,6 +31,11 @@
                 $header.css("background-image", "none");
             } else {
                 $header.css("background-image", topBG);
+            }
+            if (sctop >= triggerGreen) {
+                $header.css("background-color", "#69981a");
+            } else {
+                $header.css("background-color", "#ffffff");
             }
 
             $(win).scroll(function () {
@@ -45,6 +51,11 @@
                     $header.css("background-image", "none");
                 } else {
                     $header.css("background-image", topBG);
+                }
+                if (sctop >= triggerGreen) {
+                    $header.css("background-color", "#69981a");
+                } else {
+                    $header.css("background-color", "#ffffff");
                 }
             });
         }
@@ -302,11 +313,12 @@
                     "section9/bgd.jpg",
                     "section9/bottle.png",
                     // section 11
-                    "section11/girl.jpg",
+                    "section11/bgd.jpg",
                     // section 12
                     "section12/bgd.png",
                     // bottom
-                    "bottom/bgd.png"
+                    "bottom/bgd.png",
+                    "bottom/bottombgd.jpg"
                 ],
                 2: [""],
                 3: [""]
@@ -410,6 +422,8 @@
                 setBgd("section.section8", "section8/bgd.png");
                 setBgd("section.section8 .bottle", "section8/bottle.png");
                 setBgd("section.section9", "section9/bgd.jpg");
+                setBgd("section.section11", "section11/bgd.jpg");
+                setBgd("section.section11 .bottle", "bottle/bottle.png");
             }
         };
 

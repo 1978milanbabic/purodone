@@ -1727,6 +1727,189 @@ section.section10 .komb h5 {
   text-align-last: center;
 }
 
+section.section11 {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  background-size: 120rem auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #333333;
+  padding-top: 3.75rem;
+  border-top: 2px solid #bae44c;
+}
+
+section.section11 h2.toph2 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  padding-bottom: 0.625rem;
+}
+
+section.section11 .komeje {
+  width: 100%;
+  max-width: 40rem;
+}
+
+section.section11 .komeje h4 {
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  padding: 2.1875rem 0 0;
+}
+
+section.section11 .komeje p {
+  line-height: 1.33;
+  font-size: 1.125rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  margin: 1.5625rem 0;
+  padding: 0;
+}
+
+section.section11 .dalije {
+  width: 90%;
+  max-width: 42.1875rem;
+  padding: 1.25rem 2.1875rem 0;
+}
+
+section.section11 .dalije h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+section.section11 .dalije p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  padding-bottom: 2.1875rem;
+}
+
+section.section11 .dalije button {
+  width: 25rem;
+  max-width: 99%;
+  line-height: 1;
+  display: inline-block;
+  border: 2px solid #000;
+  color: #fff;
+  background-color: #000;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  vertical-align: middle;
+  padding: 0.3125rem 0 0.4375rem;
+  border-radius: 1.4375rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  z-index: 999;
+  opacity: 0.99;
+}
+
+section.section11 .dalije button i {
+  vertical-align: baseline;
+  padding-left: 1.25rem;
+  font-size: 1.5625rem;
+}
+
+section.section11 .dalije button:hover {
+  background-color: #999;
+}
+
+section.section11 .stak {
+  color: #fff;
+  padding: 20.9375rem 0 0;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+
+section.section11 .stak .stakazu {
+  display: inline-block;
+  width: 90%;
+  max-width: 52.625rem;
+  position: relative;
+  z-index: 2;
+}
+
+section.section11 .stak .stakazu .top {
+  width: 100%;
+  display: table;
+}
+
+section.section11 .stak .stakazu .man {
+  display: table-cell;
+  vertical-align: bottom;
+  width: 12.5rem;
+  text-align: left;
+  padding-bottom: 0.4375rem;
+}
+
+section.section11 .stak .stakazu .man i {
+  font-size: 4.375rem;
+}
+
+section.section11 .stak .stakazu .hl {
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: left;
+}
+
+section.section11 .stak .stakazu .hl h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  padding-bottom: 2.1875rem;
+}
+
+section.section11 .stak .stakazu .hl p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1.2;
+}
+
+section.section11 .stak .stakazu p.txtzelim {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+section.section11 .stak .stakazu p.txt {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.66;
+  text-align: justify;
+}
+
+section.section11 .stak .stakazu p.author {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  text-align: right;
+}
+
+section.section11 .stak .bottle {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 26.5625rem;
+  height: 26.125rem;
+  background-size: cover;
+}
+
 @media screen and (max-width: 500px) {
   body, html {
     font-size: calc(16*(100vw)/500);

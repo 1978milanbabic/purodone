@@ -1,0 +1,183 @@
+section.section11 {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-size: rem(1920) auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: $dark;
+    padding-top: rem(60);
+    border-top: 2px solid #bae44c;
+
+    h2.toph2 {
+        font-weight: 700;
+        font-style: normal;
+        font-family: $rslab;
+        font-size: rem(48);
+        line-height: 1.2;
+        padding-bottom: rem(10);
+    }
+
+    .komeje {
+        width: 100%;
+        max-width: rem(640);
+
+        h4 {
+            font-weight: 700;
+            font-family: $rslab;
+            font-size: rem(30);
+            line-height: 1.2;
+            padding: rem(35) 0 0;
+        }
+
+        p {
+            line-height: 1.33;
+            font-size: rem(18);
+            font-family: $rslab;
+            font-weight: 400;
+            margin: rem(25) 0;
+            padding: 0;
+        }
+    }
+
+    .dalije {
+        width: 90%;
+        max-width: rem(675);
+        padding: rem(20) rem(35) 0;
+
+        h3 {
+            font-family: $rob;
+            font-weight: 900;
+            font-style: italic;
+            font-size: rem(48);
+            line-height: 1.2;
+        }
+
+        p {
+            font-family: $rob;
+            font-style: italic;
+            font-size: rem(30);
+            line-height: 1.2;
+            padding-bottom: rem(35);
+        }
+
+        button {
+            width: rem(400);
+            max-width: 99%;
+            line-height: 1;
+            display: inline-block;
+            border: 2px solid #000;
+            color: #fff;
+            background-color: #000;
+            font-family: $rslab;
+            font-weight: 700;
+            font-size: rem(30);
+            vertical-align: middle;
+            padding: rem(5) 0 rem(7);
+            border-radius: rem(23);
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            position: relative;
+            z-index: 999;
+            opacity: 0.99;
+
+            i {
+                vertical-align: baseline;
+                padding-left: rem(20);
+                font-size: rem(25);
+            }
+        }
+
+        button:hover {
+            background-color: #999;
+        }
+    }
+
+    .stak {
+        color: #fff;
+        padding: rem(335) 0 0;
+        text-align: right;
+        position: relative;
+        z-index: 1;
+
+        .stakazu {
+            display: inline-block;
+            width: 90%;
+            max-width: rem(842);
+            position: relative;
+            z-index: 2;
+
+            .top {
+                width: 100%;
+                display: table;
+            }
+
+            .man {
+                display: table-cell;
+                vertical-align: bottom;
+                width: rem(200);
+                text-align: left;
+                padding-bottom: rem(7);
+
+                i {
+                    font-size: rem(70);
+                }
+            }
+
+            .hl {
+                display: table-cell;
+                vertical-align: bottom;
+                text-align: left;
+
+                h2 {
+                    font-weight: 700;
+                    font-size: rem(48);
+                    line-height: 1.2;
+                    padding-bottom: rem(35);
+                }
+
+                p {
+                    font-family: $rslab;
+                    font-weight: 700;
+                    font-size: rem(30);
+                    line-height: 1.2;
+
+                }
+            }
+
+            p.txtzelim {
+                font-family: $rslab;
+                font-weight: 700;
+                font-size: rem(18);
+                line-height: 1.2;
+            }
+
+            p.txt {
+                font-family: $rslab;
+                font-weight: 400;
+                font-size: rem(18);
+                line-height: 1.66;
+                text-align: justify;
+            }
+
+            p.author {
+                font-family: $rslab;
+                font-weight: 700;
+                font-size: rem(18);
+                line-height: 1.2;
+                text-align: right;
+            }
+        }
+
+        .bottle {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            bottom: 0;
+            width: rem(425);
+            height: rem(418);
+            background-size: cover;
+        }
+    }
+
+}
