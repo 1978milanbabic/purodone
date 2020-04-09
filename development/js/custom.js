@@ -406,6 +406,7 @@
                 setBgd("section.section3", "section3/bgd.jpg");
                 setBgd("section.section5", "section5/bgd.jpg");
                 setBgd("section.section5 .right .bottles", "bottle/bottles.png");
+                setBgd("section.section7 .right .doca", "section7/medic.png");
             }
         };
 

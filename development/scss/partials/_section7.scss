@@ -1,0 +1,67 @@
+section.section7 {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    background-color: #538414;
+    padding: rem(45) 0;
+
+    .inner {
+        display: table;
+        table-layout: fixed;
+    }
+
+    .left {
+        display: table-cell;
+        vertical-align: top;
+
+        h4 {
+            font-weight: 700;
+            font-size: rem(30);
+            padding-top: rem(25);
+        }
+
+        p {
+            font-family: $rob;
+            font-size: rem(18);
+        }
+    }
+
+    .right {
+        display: table-cell;
+        vertical-align: top;
+        position: relative;
+        z-index: 1;
+
+        .right-inner {
+            display: inline-block;
+            width: 80%;
+            max-width: rem(250);
+            margin-left: rem(110);
+            position: relative;
+            z-index: 2;
+
+            h5 {
+                text-align: justify;
+                font-weight: 700;
+                font-size: rem(24);
+            }
+
+            p {
+                font-size: rem(18);
+                font-family: $rob;
+                font-weight: 400;
+            }
+        }
+
+        .doca {
+            position: absolute;
+            bottom: rem(-50);
+            right: rem(-150);
+            z-index: 1;
+            background-size: cover;
+            width: rem(397);
+            height: rem(605);
+        }
+    }
+}

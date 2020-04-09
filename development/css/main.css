@@ -1484,6 +1484,74 @@ section.section6 .inner .right button:hover {
   background-color: #999;
 }
 
+section.section7 {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  background-color: #538414;
+  padding: 2.8125rem 0;
+}
+
+section.section7 .inner {
+  display: table;
+  table-layout: fixed;
+}
+
+section.section7 .left {
+  display: table-cell;
+  vertical-align: top;
+}
+
+section.section7 .left h4 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  padding-top: 1.5625rem;
+}
+
+section.section7 .left p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+}
+
+section.section7 .right {
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  z-index: 1;
+}
+
+section.section7 .right .right-inner {
+  display: inline-block;
+  width: 80%;
+  max-width: 15.625rem;
+  margin-left: 6.875rem;
+  position: relative;
+  z-index: 2;
+}
+
+section.section7 .right .right-inner h5 {
+  text-align: justify;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+section.section7 .right .right-inner p {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+section.section7 .right .doca {
+  position: absolute;
+  bottom: -3.125rem;
+  right: -9.375rem;
+  z-index: 1;
+  background-size: cover;
+  width: 24.8125rem;
+  height: 37.8125rem;
+}
+
 @media screen and (max-width: 500px) {
   body, html {
     font-size: calc(16*(100vw)/500);
