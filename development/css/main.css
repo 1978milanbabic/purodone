@@ -1605,6 +1605,7 @@ section.section9 {
   margin-top: -61.875rem;
   z-index: 1;
   position: relative;
+  color: #333333;
 }
 
 section.section9 .left {
@@ -1661,6 +1662,69 @@ section.section9 .left button i {
 
 section.section9 .left button:hover {
   background-color: #999;
+}
+
+section.section10 {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+  color: #333333;
+}
+
+section.section10 h4 {
+  width: 100%;
+  max-width: 40rem;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 1.875rem;
+  padding: 3.125rem 0 2.1875rem;
+}
+
+section.section10 .table {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  padding: 0 1.25rem;
+}
+
+section.section10 .table .cell {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 2.8125rem;
+}
+
+section.section10 .table .cell img {
+  width: 14.6875rem;
+  margin-bottom: 1.875rem;
+}
+
+section.section10 .table .cell .textcont {
+  display: inline-block;
+  text-align: justify;
+  font-weight: 400;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.625rem;
+  padding: 0 0.9375rem;
+}
+
+section.section10 .table .cell .textcont p {
+  font-size: 0.875rem;
+}
+
+section.section10 .komb {
+  width: 85%;
+  max-width: 59.375rem;
+  margin: 0 auto;
+  padding: 2.5rem 0 3.125rem;
+}
+
+section.section10 .komb h5 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: justify;
+  text-align-last: center;
 }
 
 @media screen and (max-width: 500px) {
