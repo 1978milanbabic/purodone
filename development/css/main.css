@@ -560,6 +560,12 @@ header .right h2 {
   font-weight: 700;
 }
 
+@media screen and (max-width: 900px) {
+  header {
+    background-size: 75rem;
+  }
+}
+
 section.section1 {
   width: 100%;
   position: relative;
@@ -711,6 +717,30 @@ section.section1 .topbottle {
   background-size: cover;
   left: calc(50% + 424px);
   top: 8.9375rem;
+}
+
+@media screen and (max-width: 1230px) {
+  section.section1 .form-top {
+    padding-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section.section1 {
+    background-size: 75rem;
+  }
+  section.section1 .topbottle {
+    width: 16.53125rem;
+    height: 26.3125rem;
+    left: calc(50% + 100px);
+    top: 34.375rem;
+  }
+  section.section1 .topbottles {
+    width: 27.875rem;
+    height: 26rem;
+    right: 60%;
+    top: -15.625rem;
+  }
 }
 
 form.order {
@@ -987,6 +1017,21 @@ section.section2 .inner .right button:hover {
   }
 }
 
+@media screen and (max-width: 900px) {
+  section.section2 {
+    background-image: none;
+  }
+  section.section2 .inner .left {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  section.section2 .inner .right .bottlecont {
+    opacity: 0.5;
+  }
+  section.section2 .inner .right .bottle {
+    left: -5.625rem;
+  }
+}
+
 section.section3 {
   width: 100%;
   height: 70.6875rem;
@@ -1027,6 +1072,12 @@ section.section3 .sim-pos {
 
 section.section3 .sim-pos p {
   font-size: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  section.section3 {
+    background-size: 75rem;
+  }
 }
 
 section.section4 {
@@ -1218,6 +1269,18 @@ section.section5 .inner .right .bottles {
   width: 55.8125rem;
   height: 33.625rem;
   background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+  section.section5 {
+    background-size: 75rem;
+  }
+  section.section5 .inner .right .bottles {
+    top: 0rem;
+    left: -6.25rem;
+    width: 37.20813rem;
+    height: 22.41688rem;
+  }
 }
 
 .order {
@@ -1550,6 +1613,15 @@ section.section7 .right .doca {
   height: 37.8125rem;
 }
 
+@media screen and (max-width: 900px) {
+  section.section7 .right .doca {
+    bottom: -3.125rem;
+    right: -3.125rem;
+    width: 16.54125rem;
+    height: 25.20812rem;
+  }
+}
+
 section.section8 {
   width: 100%;
   position: relative;
@@ -1591,6 +1663,12 @@ section.section8 .bottle {
   z-index: 1;
   top: 3.125rem;
   right: 3.125rem;
+}
+
+@media screen and (max-width: 900px) {
+  section.section8 {
+    background-size: 75rem;
+  }
 }
 
 section.section9 {
@@ -1659,6 +1737,12 @@ section.section9 .left button i {
 
 section.section9 .left button:hover {
   background-color: #999;
+}
+
+@media screen and (max-width: 900px) {
+  section.section9 {
+    background-size: 75rem;
+  }
 }
 
 section.section10 {
@@ -1982,6 +2066,21 @@ section.section11 .vremeje .right .bottle {
   background-size: cover;
 }
 
+@media screen and (max-width: 900px) {
+  section.section11 {
+    background-size: 75rem;
+  }
+  section.section11 .stak .bottlecont {
+    opacity: 0.4;
+  }
+  section.section11 .vremeje .right .bottle {
+    width: 37.20813rem;
+    height: 22.41688rem;
+    top: 4.375rem;
+    left: -3.125rem;
+  }
+}
+
 footer {
   position: relative;
   z-index: 2;
@@ -1990,7 +2089,7 @@ footer {
   background-size: 120rem auto;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: #69981a;
   background-position: bottom center;
 }
 
@@ -2013,6 +2112,36 @@ footer .order {
 footer img {
   position: relative;
   z-index: 3;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    background-size: 75rem;
+  }
+}
+
+@media screen and (max-width: 1305px) {
+  html, body {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html, body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #css-connector {
+    width: 2px;
+  }
 }
 
 @media screen and (max-width: 500px) {

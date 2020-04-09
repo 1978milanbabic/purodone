@@ -38,3 +38,9 @@ section.section3 {
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    section.section3 {
+        background-size: rem(900, 12);
+    }
+}

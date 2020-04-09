@@ -11,3 +11,6 @@ ROBOTO
 	black ita
 
 FONT AWESOME
+
+1440
+270   1170

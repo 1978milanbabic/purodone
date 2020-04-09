@@ -65,3 +65,14 @@ section.section7 {
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    section.section7 {
+        .right .doca {
+            bottom: rem(-50);
+            right: rem(-50);
+            width: rem(264.66);
+            height: rem(403.33);
+        }
+    }
+}

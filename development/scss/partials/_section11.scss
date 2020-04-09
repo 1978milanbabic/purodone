@@ -257,3 +257,20 @@ section.section11 {
     }
 
 }
+
+@media screen and (max-width: 900px) {
+    section.section11 {
+        background-size: rem(900, 12);
+
+        .stak .bottlecont {
+            opacity: 0.4;
+        }
+
+        .vremeje .right .bottle {
+            width: rem(595.33);
+            height: rem(358.67);
+            top: rem(70);
+            left: rem(-50);
+        }
+    }
+}

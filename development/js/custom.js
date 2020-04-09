@@ -17,6 +17,7 @@
         initTopFadingAndBGChange = function () {
             var $header = $("header");
             var topBG = $header.css("background-image");
+            var $html = $("html, body");
             var triggerWhite = $("section.section2").offset().top;
             var triggerGreen = $("section.section11").offset().top;
             var sctop = $(win).scrollTop();
@@ -33,9 +34,9 @@
                 $header.css("background-image", topBG);
             }
             if (sctop >= triggerGreen) {
-                $header.css("background-color", "#69981a");
+                $html.css("background-color", "#69981a");
             } else {
-                $header.css("background-color", "#ffffff");
+                $html.css("background-color", "#ffffff");
             }
 
             $(win).scroll(function () {
@@ -53,9 +54,9 @@
                     $header.css("background-image", topBG);
                 }
                 if (sctop >= triggerGreen) {
-                    $header.css("background-color", "#69981a");
+                    $html.css("background-color", "#69981a");
                 } else {
-                    $header.css("background-color", "#ffffff");
+                    $html.css("background-color", "#ffffff");
                 }
             });
         }
@@ -108,6 +109,22 @@
                         self.create_3el_slider();
                         break;
                     case 2:
+                        // set width for slider
+                        self.$slider.css({
+                            "width": (5 / 2) * 100 + "%",
+                            "left": - (1 / 5) * (5 / 2) * 100 + "%"
+                        });
+                        // set width for elems
+                        self.$entities.forEach(function ($el) {
+                            $el.css("width", (1 / 5) * 100 + "%");
+                        });
+                        // get/set max height
+                        self.setHighestEl();
+                        //      format elems
+                        // clear table
+                        self.deleteExisting();
+                        // create new ones
+                        self.create_2el_slider();
                         break;
                     case 1:
                         break;
@@ -161,6 +178,56 @@
 
                         // reload
                         self.init(3);
+                    })
+                });
+            },
+            create_2el_slider: function () {
+                var self = this;
+                // stop events
+                this.offBtns();
+                // populate elems
+                self.$entities[self.currentMatrix[0]].addClass("pastel");
+                self.$slider.append(self.$entities[self.currentMatrix[0]]);
+
+                self.$slider.append(self.$entities[self.currentMatrix[1]]);
+                self.$slider.append(self.$entities[self.currentMatrix[2]]);
+                self.$slider.append(self.$entities[self.currentMatrix[3]]);
+
+                self.$entities[self.currentMatrix[4]].addClass("tobeel");
+                self.$slider.append(self.$entities[self.currentMatrix[4]]);
+                // place arrows
+                self.showBtns();
+                self.$leftBtn.css("left", (1 / 5) * 100 + "%");
+                self.$rightBtn.css("right", (2 / 5) * 100 + "%");
+                // ** add events
+                // go left
+                this.$leftBtn.click(function () {
+                    self.offBtns();
+                    self.$slider.animate({
+                        "left": 0 + "%"
+                    }, 500, function () {
+                        // set current / change matrix
+                        var preEl = self.currentMatrix[self.currentMatrix.length - 1];
+                        self.currentMatrix.pop();
+                        self.currentMatrix.unshift(preEl);
+
+                        // reload
+                        self.init(2);
+                    })
+                });
+                // go right
+                this.$rightBtn.click(function () {
+                    self.offBtns();
+                    self.$slider.animate({
+                        "left": - (2 / 5) * (5 / 2) * 100 + "%"
+                    }, 500, function () {
+                        // set current / change matrix
+                        var preEl = self.currentMatrix[0];
+                        self.currentMatrix.shift();
+                        self.currentMatrix.push(preEl);
+
+                        // reload
+                        self.init(2);
                     })
                 });
             },
@@ -311,7 +378,6 @@
                     "section8/bottle.png",
                     // section 9
                     "section9/bgd.jpg",
-                    "section9/bottle.png",
                     // section 11
                     "section11/bgd.jpg",
                     // section 12
@@ -320,7 +386,34 @@
                     "bottom/bgd.png",
                     "bottom/bottombgd.jpg"
                 ],
-                2: [""],
+                2: [
+                    // top
+                    "top/daske.jpg",
+                    "top/top_big_bottle.png",
+                    "top/top.png",
+                    // bottle
+                    "bottle/bottle.png",
+                    "bottle/bottles.png",
+                    "bottle/top_bottles.png",
+                    // section 3
+                    "section3/bgd.jpg",
+                    // section 5
+                    "section5/bgd.jpg",
+                    // section 7
+                    "section7/medic.png",
+                    // section 8
+                    "section8/bgd.png",
+                    "section8/bottle.png",
+                    // section 9
+                    "section9/bgd.jpg",
+                    // section 11
+                    "section11/bgd.jpg",
+                    // section 12
+                    "section12/bgd.png",
+                    // bottom
+                    "bottom/bgd.png",
+                    "bottom/bottombgd.jpg"
+                ],
                 3: [""]
             },
             addPicsToPreload: function (size) {

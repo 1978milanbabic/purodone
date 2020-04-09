@@ -171,6 +171,34 @@ img {
 
 //********************** MEDIA *********************
 
+@media screen and (max-width: 1305px) {
+    $browser-default-size: 15px;
+    html, body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    $browser-default-size: 14px;
+    html, body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    $browser-default-size: 12px;
+    html, body {
+        font-size: 12px;
+    }
+}
+
+// tablet
+@media screen and (max-width: 900px) {
+    #css-connector {
+        width: 2px;
+    }
+}
+
 
 @media screen and (max-width: 500px) {
     body, html {

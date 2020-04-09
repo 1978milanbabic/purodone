@@ -52,3 +52,9 @@ header {
 
 }
 
+@media screen and (max-width: 900px) {
+    header {
+        background-size: rem(900, 12);
+    }
+}
+

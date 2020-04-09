@@ -64,3 +64,9 @@ section.section9 {
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    section.section9 {
+        background-size: rem(900, 12);
+    }
+}

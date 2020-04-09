@@ -40,3 +40,9 @@ section.section8 {
         right: rem(50);
     }
 }
+
+@media screen and (max-width: 900px) {
+    section.section8 {
+        background-size: rem(900, 12);
+    }
+}

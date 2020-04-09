@@ -6,7 +6,7 @@ footer {
     background-size: rem(1920) auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: #fff;
+    background-color: #69981a;
     background-position: bottom center;
 
     .under {
@@ -28,5 +28,11 @@ footer {
     img {
         position: relative;
         z-index: 3;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        background-size: rem(900, 12);
     }
 }

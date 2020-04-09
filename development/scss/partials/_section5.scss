@@ -86,3 +86,16 @@ section.section5 {
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    section.section5 {
+        background-size: rem(900, 12);
+
+        .inner .right .bottles {
+            top: rem(0);
+            left: rem(-100);
+            width: rem(595.33);
+            height: rem(358.67);
+        }
+    }
+}

@@ -151,3 +151,31 @@ section.section1 {
     }
 
 }
+
+@media screen and (max-width: 1230px) {
+    section.section1 {
+        .form-top {
+            padding-top: rem(40);
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section.section1 {
+        background-size: rem(900, 12);
+
+        .topbottle {
+            width: rem(264.5);
+            height: rem(421);
+            left: calc(50% + 100px);
+            top: rem(550);
+        }
+        .topbottles {
+            width: rem(446);
+            height: rem(416);
+            right: 60%;
+            top: rem(-250)
+        }
+    }
+}
+
