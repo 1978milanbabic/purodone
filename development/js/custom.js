@@ -273,6 +273,8 @@
                     "section4/slide_4.jpg",
                     "section4/slide_5.jpg",
                     "section4/slide_6.jpg",
+                    // section 6
+                    "section6/checkmark.png",
                     // section10
                     "section10/img1.jpg",
                     "section10/img2.jpg",
@@ -291,8 +293,6 @@
                     "section3/bgd.jpg",
                     // section 5
                     "section5/bgd.jpg",
-                    // section 6
-                    "section6/checkmark.png",
                     // section 7
                     "section7/medic.png",
                     // section 8

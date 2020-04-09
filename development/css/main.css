@@ -1358,6 +1358,132 @@ section.section5 .inner .right .bottles {
   background-color: #999;
 }
 
+.info {
+  position: relative;
+  font-weight: 700;
+  font-size: 3rem;
+  padding-left: 2.25rem;
+}
+
+.info .fa-info-circle {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 2rem;
+}
+
+section.section6 {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 1.5625rem 0;
+  background-color: #538414;
+}
+
+section.section6 .inner {
+  display: table;
+  table-layout: fixed;
+}
+
+section.section6 .inner .left {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+section.section6 .inner .left ul {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 0 0 0 2.5rem;
+}
+
+section.section6 .inner .left ul li {
+  padding: 0.1875rem 0;
+}
+
+section.section6 .inner .left ul li span {
+  padding-left: 0.5rem;
+  font-size: 1.125rem;
+}
+
+section.section6 .inner .right {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  padding: 1.5625rem 0;
+}
+
+section.section6 .inner .right .leaf1 {
+  position: absolute;
+  z-index: 1;
+  width: 5.25rem;
+  top: -1.875rem;
+  right: -1.875rem;
+}
+
+section.section6 .inner .right .leaf2 {
+  position: absolute;
+  z-index: 1;
+  width: 6.375rem;
+  top: 10rem;
+  right: -8.75rem;
+}
+
+section.section6 .inner .right .leaf3 {
+  position: absolute;
+  z-index: 1;
+  width: 7.1875rem;
+  bottom: 1.875rem;
+  right: 6.25rem;
+}
+
+section.section6 .inner .right h4 {
+  position: relative;
+  z-index: 3;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.875rem;
+  line-height: 3rem;
+  padding-bottom: 2.1875rem;
+}
+
+section.section6 .inner .right h4 span {
+  font-size: 3rem;
+}
+
+section.section6 .inner .right button {
+  width: 21.875rem;
+  max-width: 95%;
+  line-height: 1;
+  display: inline-block;
+  border: 2px solid #000;
+  color: #fff;
+  background-color: #000;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  vertical-align: middle;
+  padding: 0.3125rem 0 0.4375rem;
+  border-radius: 1.4375rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  z-index: 3;
+}
+
+section.section6 .inner .right button i {
+  vertical-align: baseline;
+  padding-left: 1.25rem;
+  font-size: 1.5625rem;
+}
+
+section.section6 .inner .right button:hover {
+  background-color: #999;
+}
+
 @media screen and (max-width: 500px) {
   body, html {
     font-size: calc(16*(100vw)/500);

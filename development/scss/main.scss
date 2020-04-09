@@ -147,6 +147,20 @@ img {
 @import './partials/section4';
 @import './partials/section5';
 @import './partials/order';
+// info headings
+.info {
+    position: relative;
+    font-weight: 700;
+    font-size: rem(48);
+    padding-left: rem(36);
+
+    .fa-info-circle {
+        position: absolute;
+        top: rem(16);
+        left: 0;
+        font-size: rem(32);
+    }
+}
 @import './partials/section6';
 @import './partials/section7';
 @import './partials/section8';

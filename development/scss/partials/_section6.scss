@@ -1,0 +1,110 @@
+section.section6 {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: rem(25) 0;
+    background-color: #538414;
+
+    .inner {
+        display: table;
+        table-layout: fixed;
+
+        .left {
+            display: table-cell;
+            vertical-align: middle;
+
+            ul {
+                list-style-type: none;
+                margin: rem(16) 0;
+                padding: 0 0 0 rem(40);
+
+                li {
+                    padding: rem(3) 0;
+                    span {
+                        padding-left: rem(8);
+                        font-size: rem(18);
+                    }
+                }
+            }
+        }
+
+        .right {
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            z-index: 1;
+            padding: rem(25) 0;
+
+            .leaf1 {
+                position: absolute;
+                z-index: 1;
+                width: rem(84);
+                top: rem(-30);
+                right: rem(-30);
+            }
+
+            .leaf2 {
+                position: absolute;
+                z-index: 1;
+                width: rem(102);
+                top: rem(160);
+                right: rem(-140);
+            }
+
+            .leaf3 {
+                position: absolute;
+                z-index: 1;
+                width: rem(115);
+                bottom: rem(30);
+                right: rem(100);
+            }
+
+            h4 {
+                position: relative;
+                z-index: 3;
+                font-family: $rob;
+                font-weight: 700;
+                font-style: italic;
+                font-size: rem(30);
+                line-height: rem(48);
+                padding-bottom: rem(35);
+
+                span {
+                    font-size: rem(48);
+                }
+            }
+
+            button {
+                width: rem(350);
+                max-width: 95%;
+                line-height: 1;
+                display: inline-block;
+                border: 2px solid #000;
+                color: #fff;
+                background-color: #000;
+                font-family: $rslab;
+                font-weight: 700;
+                font-size: rem(30);
+                vertical-align: middle;
+                padding: rem(5) 0 rem(7);
+                border-radius: rem(23);
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+                position: relative;
+                z-index: 3;
+
+                i {
+                    vertical-align: baseline;
+                    padding-left: rem(20);
+                    font-size: rem(25);
+                }
+            }
+
+            button:hover {
+                background-color: #999;
+            }
+        }
+    }
+
+}
