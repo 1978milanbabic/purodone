@@ -1,0 +1,32 @@
+footer {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-bottom: rem(15);
+    background-size: rem(1920) auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: bottom center;
+
+    .under {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-size: rem(1920) auto;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        height: rem(562);
+        z-index: 2;
+    }
+
+    .order {
+        margin-bottom: rem(20);
+    }
+
+    img {
+        position: relative;
+        z-index: 3;
+    }
+}

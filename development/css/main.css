@@ -698,7 +698,6 @@ section.section1 .topbottles {
   z-index: 3;
   width: 41.8125rem;
   height: 39rem;
-  background-image: url("../img/desk/bottle/top_bottles.png");
   background-size: cover;
   right: 50%;
   top: -18.4375rem;
@@ -709,7 +708,6 @@ section.section1 .topbottle {
   z-index: 3;
   width: 33.0625rem;
   height: 52.625rem;
-  background-image: url("../img/desk/top/top_big_bottle.png");
   background-size: cover;
   left: calc(50% + 424px);
   top: 8.9375rem;
@@ -907,7 +905,6 @@ section.section2 .inner .right .bottle {
   bottom: 0;
   width: 26.5625rem;
   height: 26.125rem;
-  background-image: url(../img/desk/bottle/bottle.png);
   background-size: cover;
 }
 
@@ -1668,7 +1665,6 @@ section.section10 {
   width: 100%;
   z-index: 2;
   position: relative;
-  background-color: #fff;
   color: #333333;
 }
 
@@ -1984,6 +1980,39 @@ section.section11 .vremeje .right .bottle {
   width: 55.8125rem;
   height: 33.625rem;
   background-size: cover;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 0.9375rem;
+  background-size: 120rem auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: bottom center;
+}
+
+footer .under {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-size: 120rem auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 35.125rem;
+  z-index: 2;
+}
+
+footer .order {
+  margin-bottom: 1.25rem;
+}
+
+footer img {
+  position: relative;
+  z-index: 3;
 }
 
 @media screen and (max-width: 500px) {

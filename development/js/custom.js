@@ -413,8 +413,9 @@
 
                 setBgd("header", "top/daske.jpg");
                 setBgd("section.section1", "top/top.png");
-
-
+                setBgd("section.section1 .topbottles", "bottle/top_bottles.png");
+                setBgd("section.section1 .topbottle", "top/top_big_bottle.png");
+                setBgd("section.section2 .right .bottle", "bottle/bottle.png");
                 setBgd("section.section3", "section3/bgd.jpg");
                 setBgd("section.section5", "section5/bgd.jpg");
                 setBgd("section.section5 .right .bottles", "bottle/bottles.png");
@@ -426,6 +427,8 @@
                 setBgd("section.section11 .bottle", "bottle/bottle.png");
                 setBgd("section.section11 .stak .bottle", "bottle/bottle.png");
                 setBgd("section.section11 .vremeje .bottle", "bottle/bottles.png");
+                setBgd("footer .under", "bottom/bgd.png");
+                setBgd("footer", "bottom/bottombgd.jpg");
             }
         };
 
