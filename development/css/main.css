@@ -383,8 +383,8 @@
 }
 
 .leafin {
-  -webkit-animation: leafin 1.5s ease-in-out;
-          animation: leafin 1.5s ease-in-out;
+  -webkit-animation: leafin 2.5s ease-in-out;
+          animation: leafin 2.5s ease-in-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -1550,6 +1550,49 @@ section.section7 .right .doca {
   background-size: cover;
   width: 24.8125rem;
   height: 37.8125rem;
+}
+
+section.section8 {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  background-size: 120rem auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 78.8125rem;
+}
+
+section.section8 .inner {
+  position: relative;
+}
+
+section.section8 .left {
+  width: 100%;
+  max-width: 40rem;
+  position: relative;
+  z-index: 2;
+}
+
+section.section8 .left h4 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  padding-top: 1.5625rem;
+}
+
+section.section8 .left p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+}
+
+section.section8 .bottle {
+  width: 16rem;
+  height: 25.5rem;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 3.125rem;
+  right: 3.125rem;
 }
 
 @media screen and (max-width: 500px) {
