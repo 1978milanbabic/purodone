@@ -179,3 +179,112 @@ section.section1 {
     }
 }
 
+@media screen and (max-width: 830px) {
+    section.section1 {
+        .form-top {
+            padding-top: rem(80);
+        }
+        .zasto .inner .left .left-inner img {
+            left: 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    section.section1 {
+        margin-top: rem(750);
+
+        .topbottles {
+            right: 30%;
+            top: rem(-300)
+        }
+
+        .kada .inner {
+            width: 100%;
+            display: block;
+
+            .left {
+                display: block;
+                width: 85%;
+                margin: 0 auto;
+            }
+
+            .right {
+                display: block;
+            }
+        }
+
+        .tbcont {
+            opacity: 0.4;
+        }
+
+        .zasto .inner {
+            display: block;
+            width: 100%;
+
+            .left, .right {
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .left .left-inner img {
+                top: rem(-20);
+                left: 50%;
+                transform: translate(-50%, 0);
+                opacity: .8;
+            }
+
+            .right {
+                opacity: 0.99;
+            }
+        }
+
+        .najop {
+            position: relative;
+            z-index: 1;
+
+            .inner {
+                display: block;
+                width: 100%;
+
+                .left, .right {
+                    display: block;
+                }
+
+                .right {
+                    position: relative;
+                    z-index: 3;
+                    width: 80%;
+                    margin: 0 auto;
+                    padding-top: rem(180);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    section.section1 {
+        .topbottles {
+            right: 30%;
+            top: rem(-250)
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    section.section1 {
+        .najop .inner .right {
+            padding-top: rem(120, 12);
+        }
+        .zasto .inner {
+            .right {
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+

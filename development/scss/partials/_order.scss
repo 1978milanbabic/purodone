@@ -132,4 +132,24 @@
 
 }
 
+@media screen and (max-width: 620px) {
+    .order {
+        background-color: #538414;
+
+        .inner .orders {
+            display: block;
+
+            .order {
+                width: 100%;
+                display: block;
+                max-width: rem(290, 12);
+                margin: 0 auto;
+                margin-bottom: rem(40, 12);
+            }
+        }
+        .inner .btncont {
+            padding-top: 0;
+        }
+    }
+}
 

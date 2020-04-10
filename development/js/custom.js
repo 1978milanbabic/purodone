@@ -127,6 +127,22 @@
                         self.create_2el_slider();
                         break;
                     case 1:
+                        // set width for slider
+                        self.$slider.css({
+                            "width": (5 / 1) * 100 + "%",
+                            "left": - (1 / 5) * (5 / 1) * 100 + "%"
+                        });
+                        // set width for elems
+                        self.$entities.forEach(function ($el) {
+                            $el.css("width", (1 / 5) * 100 + "%");
+                        });
+                        // get/set max height
+                        self.setHighestEl();
+                        //      format elems
+                        // clear table
+                        self.deleteExisting();
+                        // create new ones
+                        self.create_1el_slider();
                         break;
                 }
 
@@ -228,6 +244,56 @@
 
                         // reload
                         self.init(2);
+                    })
+                });
+            },
+            create_1el_slider: function () {
+                var self = this;
+                // stop events
+                this.offBtns();
+                // populate elems
+                self.$entities[self.currentMatrix[0]].addClass("pastel");
+                self.$slider.append(self.$entities[self.currentMatrix[0]]);
+
+                self.$slider.append(self.$entities[self.currentMatrix[1]]);
+                self.$slider.append(self.$entities[self.currentMatrix[2]]);
+                self.$slider.append(self.$entities[self.currentMatrix[3]]);
+
+                self.$entities[self.currentMatrix[4]].addClass("tobeel");
+                self.$slider.append(self.$entities[self.currentMatrix[4]]);
+                // place arrows
+                self.showBtns();
+                self.$leftBtn.css("left", (1 / 5) * 100 + "%");
+                self.$rightBtn.css("right", (3 / 5) * 100 + "%");
+                // ** add events
+                // go left
+                this.$leftBtn.click(function () {
+                    self.offBtns();
+                    self.$slider.animate({
+                        "left": 0 + "%"
+                    }, 500, function () {
+                        // set current / change matrix
+                        var preEl = self.currentMatrix[self.currentMatrix.length - 1];
+                        self.currentMatrix.pop();
+                        self.currentMatrix.unshift(preEl);
+
+                        // reload
+                        self.init(1);
+                    })
+                });
+                // go right
+                this.$rightBtn.click(function () {
+                    self.offBtns();
+                    self.$slider.animate({
+                        "left": - (4 / 5) * (5 / 2) * 100 + "%"
+                    }, 500, function () {
+                        // set current / change matrix
+                        var preEl = self.currentMatrix[0];
+                        self.currentMatrix.shift();
+                        self.currentMatrix.push(preEl);
+
+                        // reload
+                        self.init(1);
                     })
                 });
             },
@@ -544,7 +610,7 @@
 
         media.size(3, function () {
             //custom function for size 3
-            picPreloadHandler.addPicsToPreload(3);
+            picPreloadHandler.addPicsToPreload(2);
             // create slider
             slider.init(1)
         });

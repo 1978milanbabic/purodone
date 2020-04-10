@@ -61,3 +61,23 @@ section.section10 {
     }
 
 }
+
+@media screen and (max-width: 740px) {
+    section.section10 {
+        h4 {
+            margin: 0 auto;
+        }
+
+        .table {
+            display: block;
+
+            .cell {
+                display: block;
+                width: 100%;
+                max-width: 270px;
+                margin: 0 auto;
+                padding-bottom: rem(40, 12);
+            }
+        }
+    }
+}

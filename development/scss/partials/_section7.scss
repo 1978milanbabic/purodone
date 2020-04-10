@@ -76,3 +76,37 @@ section.section7 {
         }
     }
 }
+
+@media screen and (max-width: 830px) {
+    section.section7 {
+        .right .right-inner {
+            margin-left: rem(50);
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    section.section7 {
+        .inner {
+            width: 100%;
+            display: block;
+
+            .left {
+                width: 80%;
+                max-width: rem(500, 12);
+                display: block;
+                margin: 0 auto;
+            }
+
+            .right {
+                width: 100%;
+                max-width: rem(400, 12);
+                margin: 0 auto;
+                display: block;
+                padding: rem(40, 12) 0;
+                margin-bottom: rem(40, 12);
+
+            }
+        }
+    }
+}

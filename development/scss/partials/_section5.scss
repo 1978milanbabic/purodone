@@ -99,3 +99,32 @@ section.section5 {
         }
     }
 }
+
+@media screen and (max-width: 740px) {
+    section.section5 {
+        margin-bottom: rem(-950);
+
+        .inner {
+            width: 100%;
+            display: block;
+
+            .left {
+                width: 100%;
+                max-width: rem(500, 12);
+                margin: 0 auto;
+                display: block;
+                padding-top: 0;
+                padding-bottom: rem(20, 12);
+            }
+
+            .right {
+                width: 100%;
+                display: block;
+
+                .bottles {
+                    left: rem(50, 12);
+                }
+            }
+        }
+    }
+}

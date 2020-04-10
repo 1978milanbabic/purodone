@@ -46,3 +46,15 @@ section.section8 {
         background-size: rem(900, 12);
     }
 }
+
+@media screen and (max-width: 740px) {
+    section.section8 {
+        .left {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .bcont {
+            opacity: 0.4;
+        }
+    }
+}

@@ -100,3 +100,15 @@ section.section4 {
 
 
 }
+
+@media screen and (max-width: 740px) {
+    section.section4 {
+        .sigurno {
+            margin: 0 auto;
+        }
+
+        .loszadah {
+            padding-bottom: rem(40, 12);
+        }
+    }
+}

@@ -192,3 +192,75 @@ section.section2 {
         }
     }
 }
+
+@media screen and (max-width: 830px) {
+    section.section2 {
+        .inner {
+            .right {
+                .bottlecont {
+                    opacity: 0.4;
+                }
+                .bottle {
+                    left: rem(-40);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    section.section2 {
+        .inner {
+            display: block;
+            width: 100%;
+
+            .left {
+                display: block;
+                width: 90%;
+                max-width: 580px;
+                margin: 0 auto;
+
+                .leaf1 {
+                    left: rem(100);
+                    top: rem(0);
+                }
+
+                .leaf2 {
+                    left: rem(-0);
+                    bottom: rem(-60);
+                }
+            }
+
+            .right {
+                display: block;
+                width: 100%;
+                max-width: 270px;
+                margin: 0 auto;
+
+                .leaf3 {
+                    left: auto;
+                    right: rem(-100);
+                    top: rem(-25);
+                }
+
+                .leaf4 {
+                    left: rem(336);
+                    top: rem(79);
+                }
+
+                .leaf5 {
+                    left: rem(-80);
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    section.section2 {
+        .inner .right {
+            padding-top: rem(150, 12)
+        }
+    }
+}

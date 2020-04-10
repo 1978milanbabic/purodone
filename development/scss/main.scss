@@ -199,6 +199,18 @@ img {
     }
 }
 
+// mobile
+@media screen and (max-width: 620px) {
+    #css-connector {
+        width: 3px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .dz {
+        width: 1px
+    }
+}
 
 @media screen and (max-width: 500px) {
     body, html {
@@ -207,6 +219,6 @@ img {
         //*MAXFS - max font-size
         //*MINSZ - min screen size
         //*MAXSZ - max screen size
-        font-size: calc(16*(100vw)/500);
+        font-size: calc(12*(100vw)/500);
     }
 }

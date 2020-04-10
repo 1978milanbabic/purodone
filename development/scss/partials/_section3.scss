@@ -44,3 +44,11 @@ section.section3 {
         background-size: rem(900, 12);
     }
 }
+
+@media screen and (max-width: 540px) {
+    section.section3 {
+        .ako-pos {
+            transform: translateX(-50px);
+        }
+    }
+}

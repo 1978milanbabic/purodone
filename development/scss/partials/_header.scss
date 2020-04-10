@@ -58,3 +58,21 @@ header {
     }
 }
 
+@media screen and (max-width: 740px) {
+    header {
+        .inner {
+            display: block;
+
+        }
+        .left {
+            display: block;
+            width: 100%;
+        }
+        .right {
+            display: block;
+            width: 80%;
+            margin: rem(35) auto 0;
+        }
+    }
+}
+
